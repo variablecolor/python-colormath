@@ -479,7 +479,6 @@ REFERENCE_ILLUM_C = numpy.array((
     0.00,
     0.00,
     0.00,
-    0.00,
     0.00
 ))
 
