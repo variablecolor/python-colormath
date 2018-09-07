@@ -857,11 +857,11 @@ REFERENCE_ILLUM_BLACKBODY = numpy.array((
 # This table is used to match up illuminants to spectral distributions above.
 # It should correspond to a ColorObject.illuminant attribute.
 REF_ILLUM_TABLE = {
-    'a': REFERENCE_ILLUM_A,  # Updated - Cody
+    'a': REFERENCE_ILLUM_A,
     'b': REFERENCE_ILLUM_B,
     'c': REFERENCE_ILLUM_C,
-    'd50': REFERENCE_ILLUM_D50,  # Updated - Cody
-    'd65': REFERENCE_ILLUM_D65,  # Updated - Cody
+    'd50': REFERENCE_ILLUM_D50,
+    'd65': REFERENCE_ILLUM_D65,
     'e': REFERENCE_ILLUM_E,
     'f2': REFERENCE_ILLUM_F2,
     'f7': REFERENCE_ILLUM_F7,
