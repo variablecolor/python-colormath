@@ -49,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'python-colormath'
+project = u'python-colormathfive'
 copyright = u'2014, Greg Taylor'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -202,7 +202,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'python-colormath.tex', u'python-colormath Documentation',
+  ('index', 'python-colormathfive.tex', u'python-colormathfive Documentation',
    u'Greg Taylor', 'manual'),
 ]
 
@@ -232,7 +232,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'python-colormath', u'python-colormath Documentation',
+    ('index', 'python-colormathfive', u'python-colormathfive Documentation',
      [u'Greg Taylor'], 1)
 ]
 
@@ -246,8 +246,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'python-colormath', u'python-colormath Documentation',
-   u'Greg Taylor', 'python-colormath', 'One line description of project.',
+  ('index', 'python-colormathfive', u'python-colormathfive Documentation',
+   u'Greg Taylor', 'python-colormathfive', 'One line description of project.',
    'Miscellaneous'),
 ]
 

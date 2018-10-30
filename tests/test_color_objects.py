@@ -5,8 +5,8 @@ Various tests for color objects.
 
 import unittest
 
-from colormath.color_conversions import convert_color
-from colormath.color_objects import SpectralColor, XYZColor, xyYColor, \
+from colormathfive.color_conversions import convert_color
+from colormathfive.color_objects import SpectralColor, XYZColor, xyYColor, \
     LabColor, LuvColor, LCHabColor, LCHuvColor, sRGBColor, HSLColor, HSVColor, \
     CMYColor, CMYKColor, AdobeRGBColor, AppleRGBColor, IPTColor
 
@@ -193,7 +193,7 @@ class LCHabConversionTestCase(BaseColorConversionTest):
         """
         Tests for a bug resulting in a domain error with LCH->Adobe RGB.
 
-        See: https://github.com/gtaylor/python-colormath/issues/49
+        See: https://github.com/gtaylor/python-colormathfive/issues/49
         """
 
         lchab = LCHabColor(40.0, 104.0, 40.0)

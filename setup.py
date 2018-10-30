@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import colormath
+import colormathfive
 
 from setuptools import setup
 
@@ -23,15 +23,15 @@ CLASSIFIERS = [
 KEYWORDS = 'color math conversions'
 
 setup(
-    name='colormath',
-    version=colormath.VERSION,
+    name='colormathfive',
+    version=colormathfive.VERSION,
     description='Color math and conversion library.',
     long_description=LONG_DESCRIPTION,
     author='Gregory Taylor',
     author_email='gtaylor@gc-taylor.com',
-    url='https://github.com/gtaylor/python-colormath',
-    download_url='http://pypi.python.org/pypi/colormath/',
-    packages=['colormath'],
+    url='https://github.com/gtaylor/python-colormathfive',
+    download_url='http://pypi.python.org/pypi/colormathfive/',
+    packages=['colormathfive'],
     platforms=['Platform Independent'],
     license='BSD',
     classifiers=CLASSIFIERS,

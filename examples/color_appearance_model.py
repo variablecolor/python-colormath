@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from colormath.color_appearance_models import CIECAM02
-from colormath.color_objects import XYZColor
+from colormathfive.color_appearance_models import CIECAM02
+from colormathfive.color_objects import XYZColor
 
 
 # Color stimulus

@@ -2,11 +2,11 @@
 import itertools
 import numpy as np
 import unittest
-from colormath import color_conversions
-from colormath.color_conversions import GraphConversionManager, XYZ_to_RGB, HSV_to_RGB, \
+from colormathfive import color_conversions
+from colormathfive.color_conversions import GraphConversionManager, XYZ_to_RGB, HSV_to_RGB, \
                                         RGB_to_XYZ
-from colormath.color_exceptions import UndefinedConversionError
-from colormath.color_objects import XYZColor, BaseRGBColor, HSVColor, HSLColor, \
+from colormathfive.color_exceptions import UndefinedConversionError
+from colormathfive.color_objects import XYZColor, BaseRGBColor, HSVColor, HSLColor, \
                                     AdobeRGBColor, BT2020Color, sRGBColor
 
 

@@ -9,8 +9,8 @@ you may perform.
 # noinspection PyUnresolvedReferences
 import example_config
 
-from colormath.color_conversions import convert_color
-from colormath.color_objects import LabColor, LCHabColor, SpectralColor, sRGBColor, \
+from colormathfive.color_conversions import convert_color
+from colormathfive.color_objects import LabColor, LCHabColor, SpectralColor, sRGBColor, \
     XYZColor, LCHuvColor, IPTColor
 
 

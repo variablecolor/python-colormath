@@ -6,7 +6,7 @@ This module contains exceptions for use throughout the L11 Colorlib.
 
 class ColorMathException(Exception):
     """
-    Base exception for all colormath exceptions.
+    Base exception for all colormathfive exceptions.
     """
 
     pass

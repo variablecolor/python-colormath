@@ -21,8 +21,8 @@ import numpy as np
 # noinspection PyUnresolvedReferences
 import example_config
 
-from colormath.color_diff_matrix import delta_e_cie2000
-from colormath.color_objects import LabColor
+from colormathfive.color_diff_matrix import delta_e_cie2000
+from colormathfive.color_objects import LabColor
 
 
 # load list of 1000 random colors from the XKCD color chart

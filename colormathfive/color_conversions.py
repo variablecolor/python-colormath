@@ -13,14 +13,14 @@ import logging
 import numpy
 import networkx
 
-from colormath import color_constants
-from colormath import spectral_constants
-from colormath.color_objects import ColorBase, XYZColor, sRGBColor, \
+from colormathfive import color_constants
+from colormathfive import spectral_constants
+from colormathfive.color_objects import ColorBase, XYZColor, sRGBColor, \
     LCHabColor, LCHuvColor, LabColor, xyYColor, LuvColor, HSVColor, HSLColor, \
     CMYColor, CMYKColor, BaseRGBColor, IPTColor, SpectralColor, AdobeRGBColor, \
     BT2020Color
-from colormath.chromatic_adaptation import apply_chromatic_adaptation
-from colormath.color_exceptions import InvalidIlluminantError, \
+from colormathfive.chromatic_adaptation import apply_chromatic_adaptation
+from colormathfive.color_exceptions import InvalidIlluminantError, \
     UndefinedConversionError
 
 
@@ -945,7 +945,7 @@ def convert_color(color, target_cs, through_rgb_type=sRGBColor,
         pass this here. Otherwise the RGB space's native illuminant
         will be used.
     :returns: An instance of the type passed in as ``target_cs``.
-    :raises: :py:exc:`colormath.color_exceptions.UndefinedConversionError`
+    :raises: :py:exc:`colormathfive.color_exceptions.UndefinedConversionError`
         if conversion between the two color spaces isn't possible.
     """
     if isinstance(target_cs, str):
