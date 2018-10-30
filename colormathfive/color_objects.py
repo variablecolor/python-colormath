@@ -138,38 +138,65 @@ class SpectralColor(IlluminantMixin, ColorBase):
 
     See `Spectral power distribution <http://en.wikipedia.org/wiki/Spectral_power_distribution>`_
     on Wikipedia for some higher level details on how these work.
+
+    UPDATED TO 5nm Scale - Cody
     """
 
     VALUES = [
-        'spec_340nm', 'spec_350nm', 'spec_360nm', 'spec_370nm',
-        'spec_380nm', 'spec_390nm', 'spec_400nm', 'spec_410nm',
-        'spec_420nm', 'spec_430nm', 'spec_440nm', 'spec_450nm',
-        'spec_460nm', 'spec_470nm', 'spec_480nm', 'spec_490nm',
-        'spec_500nm', 'spec_510nm', 'spec_520nm', 'spec_530nm',
-        'spec_540nm', 'spec_550nm', 'spec_560nm', 'spec_570nm',
-        'spec_580nm', 'spec_590nm', 'spec_600nm', 'spec_610nm',
-        'spec_620nm', 'spec_630nm', 'spec_640nm', 'spec_650nm',
-        'spec_660nm', 'spec_670nm', 'spec_680nm', 'spec_690nm',
-        'spec_700nm', 'spec_710nm', 'spec_720nm', 'spec_730nm',
-        'spec_740nm', 'spec_750nm', 'spec_760nm', 'spec_770nm',
-        'spec_780nm', 'spec_790nm', 'spec_800nm', 'spec_810nm',
-        'spec_820nm', 'spec_830nm'
+        'spec_340nm', 'spec_345nm', 'spec_350nm', 'spec_355nm',
+        'spec_360nm', 'spec_365nm', 'spec_370nm', 'spec_375nm',
+        'spec_380nm', 'spec_385nm', 'spec_390nm', 'spec_395nm',
+        'spec_400nm', 'spec_405nm', 'spec_410nm', 'spec_415nm',
+        'spec_420nm', 'spec_425nm', 'spec_430nm', 'spec_435nm',
+        'spec_440nm', 'spec_445nm', 'spec_450nm', 'spec_455nm',
+        'spec_460nm', 'spec_465nm', 'spec_470nm', 'spec_475nm',
+        'spec_480nm', 'spec_485nm', 'spec_490nm', 'spec_495nm',
+        'spec_500nm', 'spec_505nm', 'spec_510nm', 'spec_515nm',
+        'spec_520nm', 'spec_525nm', 'spec_530nm', 'spec_535nm',
+        'spec_540nm', 'spec_545nm', 'spec_550nm', 'spec_555nm',
+        'spec_560nm', 'spec_565nm', 'spec_570nm', 'spec_575nm',
+        'spec_580nm', 'spec_585nm', 'spec_590nm', 'spec_595nm',
+        'spec_600nm', 'spec_605nm', 'spec_610nm', 'spec_615nm',
+        'spec_620nm', 'spec_625nm', 'spec_630nm', 'spec_635nm',
+        'spec_640nm', 'spec_645nm', 'spec_650nm', 'spec_655nm',
+        'spec_660nm', 'spec_665nm', 'spec_670nm', 'spec_675nm',
+        'spec_680nm', 'spec_685nm', 'spec_690nm', 'spec_695nm',
+        'spec_700nm', 'spec_705nm', 'spec_710nm', 'spec_715nm',
+        'spec_720nm', 'spec_725nm', 'spec_730nm', 'spec_735nm',
+        'spec_740nm', 'spec_745nm', 'spec_750nm', 'spec_755nm',
+        'spec_760nm', 'spec_765nm', 'spec_770nm', 'spec_775nm',
+        'spec_780nm', 'spec_785nm', 'spec_790nm', 'spec_795nm',
+        'spec_800nm', 'spec_805nm', 'spec_810nm', 'spec_815nm',
+        'spec_820nm', 'spec_825nm', 'spec_830nm',
     ]
 
     def __init__(self,
-        spec_340nm=0.0, spec_350nm=0.0, spec_360nm=0.0, spec_370nm=0.0,
-        spec_380nm=0.0, spec_390nm=0.0, spec_400nm=0.0, spec_410nm=0.0,
-        spec_420nm=0.0, spec_430nm=0.0, spec_440nm=0.0, spec_450nm=0.0,
-        spec_460nm=0.0, spec_470nm=0.0, spec_480nm=0.0, spec_490nm=0.0,
-        spec_500nm=0.0, spec_510nm=0.0, spec_520nm=0.0, spec_530nm=0.0,
-        spec_540nm=0.0, spec_550nm=0.0, spec_560nm=0.0, spec_570nm=0.0,
-        spec_580nm=0.0, spec_590nm=0.0, spec_600nm=0.0, spec_610nm=0.0,
-        spec_620nm=0.0, spec_630nm=0.0, spec_640nm=0.0, spec_650nm=0.0,
-        spec_660nm=0.0, spec_670nm=0.0, spec_680nm=0.0, spec_690nm=0.0,
-        spec_700nm=0.0, spec_710nm=0.0, spec_720nm=0.0, spec_730nm=0.0,
-        spec_740nm=0.0, spec_750nm=0.0, spec_760nm=0.0, spec_770nm=0.0,
-        spec_780nm=0.0, spec_790nm=0.0, spec_800nm=0.0, spec_810nm=0.0,
-        spec_820nm=0.0, spec_830nm=0.0, observer='2', illuminant='d50'):
+        spec_340nm=0.0, spec_345nm=0.0, spec_350nm=0.0, spec_355nm=0.0,
+        spec_360nm=0.0, spec_365nm=0.0, spec_370nm=0.0, spec_375nm=0.0,
+        spec_380nm=0.0, spec_385nm=0.0, spec_390nm=0.0, spec_395nm=0.0,
+        spec_400nm=0.0, spec_405nm=0.0, spec_410nm=0.0, spec_415nm=0.0,
+        spec_420nm=0.0, spec_425nm=0.0, spec_430nm=0.0, spec_435nm=0.0,
+        spec_440nm=0.0, spec_445nm=0.0, spec_450nm=0.0, spec_455nm=0.0,
+        spec_460nm=0.0, spec_465nm=0.0, spec_470nm=0.0, spec_475nm=0.0,
+        spec_480nm=0.0, spec_485nm=0.0, spec_490nm=0.0, spec_495nm=0.0,
+        spec_500nm=0.0, spec_505nm=0.0, spec_510nm=0.0, spec_515nm=0.0,
+        spec_520nm=0.0, spec_525nm=0.0, spec_530nm=0.0, spec_535nm=0.0,
+        spec_540nm=0.0, spec_545nm=0.0, spec_550nm=0.0, spec_555nm=0.0,
+        spec_560nm=0.0, spec_565nm=0.0, spec_570nm=0.0, spec_575nm=0.0,
+        spec_580nm=0.0, spec_585nm=0.0, spec_590nm=0.0, spec_595nm=0.0,
+        spec_600nm=0.0, spec_605nm=0.0, spec_610nm=0.0, spec_615nm=0.0,
+        spec_620nm=0.0, spec_625nm=0.0, spec_630nm=0.0, spec_635nm=0.0,
+        spec_640nm=0.0, spec_645nm=0.0, spec_650nm=0.0, spec_655nm=0.0,
+        spec_660nm=0.0, spec_665nm=0.0, spec_670nm=0.0, spec_675nm=0.0,
+        spec_680nm=0.0, spec_685nm=0.0, spec_690nm=0.0, spec_695nm=0.0,
+        spec_700nm=0.0, spec_705nm=0.0, spec_710nm=0.0, spec_715nm=0.0,
+        spec_720nm=0.0, spec_725nm=0.0, spec_730nm=0.0, spec_735nm=0.0,
+        spec_740nm=0.0, spec_745nm=0.0, spec_750nm=0.0, spec_755nm=0.0,
+        spec_760nm=0.0, spec_765nm=0.0, spec_770nm=0.0, spec_775nm=0.0,
+        spec_780nm=0.0, spec_785nm=0.0, spec_790nm=0.0, spec_795nm=0.0,
+        spec_800nm=0.0, spec_805nm=0.0, spec_810nm=0.0, spec_815nm=0.0,
+        spec_820nm=0.0, spec_825nm=0.0, spec_830nm=0.0, observer='2',
+        illuminant='d50'):
         """
         :keyword str observer: Observer angle. Either ``'2'`` or ``'10'`` degrees.
         :keyword str illuminant: See :doc:`illuminants` for valid values.
@@ -178,60 +205,109 @@ class SpectralColor(IlluminantMixin, ColorBase):
         super(SpectralColor, self).__init__()
         # Spectral fields
         self.spec_340nm = float(spec_340nm)
+        self.spec_345nm = float(spec_345nm)
         self.spec_350nm = float(spec_350nm)
+        self.spec_355nm = float(spec_355nm)
         self.spec_360nm = float(spec_360nm)
+        self.spec_365nm = float(spec_365nm)
         self.spec_370nm = float(spec_370nm)
+        self.spec_375nm = float(spec_375nm)
         # begin Blue wavelengths
         self.spec_380nm = float(spec_380nm)
+        self.spec_385nm = float(spec_385nm)
         self.spec_390nm = float(spec_390nm)
+        self.spec_395nm = float(spec_395nm)
         self.spec_400nm = float(spec_400nm)
+        self.spec_405nm = float(spec_405nm)
         self.spec_410nm = float(spec_410nm)
+        self.spec_415nm = float(spec_415nm)
         self.spec_420nm = float(spec_420nm)
+        self.spec_425nm = float(spec_425nm)
         self.spec_430nm = float(spec_430nm)
+        self.spec_435nm = float(spec_435nm)
         self.spec_440nm = float(spec_440nm)
+        self.spec_445nm = float(spec_445nm)
         self.spec_450nm = float(spec_450nm)
+        self.spec_455nm = float(spec_455nm)
         self.spec_460nm = float(spec_460nm)
+        self.spec_465nm = float(spec_465nm)
         self.spec_470nm = float(spec_470nm)
+        self.spec_475nm = float(spec_475nm)
         self.spec_480nm = float(spec_480nm)
+        self.spec_485nm = float(spec_485nm)
         self.spec_490nm = float(spec_490nm)
+        self.spec_495nm = float(spec_495nm)
         # end Blue wavelengths
         # start Green wavelengths
         self.spec_500nm = float(spec_500nm)
+        self.spec_505nm = float(spec_505nm)
         self.spec_510nm = float(spec_510nm)
+        self.spec_515nm = float(spec_515nm)
         self.spec_520nm = float(spec_520nm)
+        self.spec_525nm = float(spec_525nm)
         self.spec_530nm = float(spec_530nm)
+        self.spec_535nm = float(spec_535nm)
         self.spec_540nm = float(spec_540nm)
+        self.spec_545nm = float(spec_545nm)
         self.spec_550nm = float(spec_550nm)
+        self.spec_555nm = float(spec_555nm)
         self.spec_560nm = float(spec_560nm)
+        self.spec_565nm = float(spec_565nm)
         self.spec_570nm = float(spec_570nm)
+        self.spec_575nm = float(spec_575nm)
         self.spec_580nm = float(spec_580nm)
+        self.spec_585nm = float(spec_585nm)
         self.spec_590nm = float(spec_590nm)
+        self.spec_595nm = float(spec_595nm)
         self.spec_600nm = float(spec_600nm)
+        self.spec_605nm = float(spec_605nm)
         self.spec_610nm = float(spec_610nm)
+        self.spec_615nm = float(spec_615nm)
         # end Green wavelengths
         # start Red wavelengths
         self.spec_620nm = float(spec_620nm)
+        self.spec_625nm = float(spec_625nm)
         self.spec_630nm = float(spec_630nm)
+        self.spec_635nm = float(spec_635nm)
         self.spec_640nm = float(spec_640nm)
+        self.spec_645nm = float(spec_645nm)
         self.spec_650nm = float(spec_650nm)
+        self.spec_655nm = float(spec_655nm)
         self.spec_660nm = float(spec_660nm)
+        self.spec_665nm = float(spec_665nm)
         self.spec_670nm = float(spec_670nm)
+        self.spec_675nm = float(spec_675nm)
         self.spec_680nm = float(spec_680nm)
+        self.spec_685nm = float(spec_685nm)
         self.spec_690nm = float(spec_690nm)
+        self.spec_695nm = float(spec_695nm)
         self.spec_700nm = float(spec_700nm)
+        self.spec_705nm = float(spec_705nm)
         self.spec_710nm = float(spec_710nm)
+        self.spec_715nm = float(spec_715nm)
         self.spec_720nm = float(spec_720nm)
+        self.spec_725nm = float(spec_725nm)
         # end Red wavelengths
         self.spec_730nm = float(spec_730nm)
+        self.spec_735nm = float(spec_735nm)
         self.spec_740nm = float(spec_740nm)
+        self.spec_745nm = float(spec_745nm)
         self.spec_750nm = float(spec_750nm)
+        self.spec_755nm = float(spec_755nm)
         self.spec_760nm = float(spec_760nm)
+        self.spec_765nm = float(spec_765nm)
         self.spec_770nm = float(spec_770nm)
+        self.spec_775nm = float(spec_775nm)
         self.spec_780nm = float(spec_780nm)
+        self.spec_785nm = float(spec_785nm)
         self.spec_790nm = float(spec_790nm)
+        self.spec_795nm = float(spec_795nm)
         self.spec_800nm = float(spec_800nm)
+        self.spec_805nm = float(spec_805nm)
         self.spec_810nm = float(spec_810nm)
+        self.spec_815nm = float(spec_815nm)
         self.spec_820nm = float(spec_820nm)
+        self.spec_825nm = float(spec_825nm)
         self.spec_830nm = float(spec_830nm)
 
         #: The color's observer angle. Set with :py:meth:`set_observer`.
